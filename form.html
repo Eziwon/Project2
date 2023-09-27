@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form practice</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+        .submit {
+            width: 100px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }   
+    </style>
+</head>
+<body>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>개인정보 입력</legend>
+            <label for="name">이름: </label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="studentnum">학번: </label>
+            <input type="text" id="studentnum" name="studentnum"><br><br>
+
+            <label>성별: </label><br>
+            <input type="radio" name="gender" value="male">남성
+            <input type="radio" name="gender" value="female">여성 <br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>전공, RC 신청</legend>
+            <label for="major">희망하는 전공: </label><br>
+            <input type="checkbox" name="major" value="GLS">글로벌리더쉽학부<br>
+            <input type="checkbox" name="major" value="Lang&Liter">국제어문학부<br>
+            <input type="checkbox" name="major" value="Ma&Ec">경영경제학부<br>
+            <input type="checkbox" name="major" value="Law">법학부<br>
+            <input type="checkbox" name="major" value="Commu">커뮤니케이션학부<br>
+            <input type="checkbox" name="major" value="SpatialEnv">공간환경시스템학부<br>
+            <input type="checkbox" name="major" value="Me&Con">기계제어공학부<br>
+            <input type="checkbox" name="major" value="Design">콘텐츠융합디자인학부<br>
+            <input type="checkbox" name="major" value="LifeSience">생명과학부<br>
+            <input type="checkbox" name="major" value="Computer">전산전자공학부<br>
+            <input type="checkbox" name="major" value="ICT">ICT창업학부<br><br>
+
+            <label for="RC">희망하는 RC: </label>
+            <select name="RC">
+                <option value="To">토레이</option>
+                <option value="Jang">장기려</option>
+                <option value="Kuy">카이퍼</option>
+                <option value="Son">손양원</option>
+                <option value="Phil">열송학사</option>
+                <option value="Car">카마이클</option>
+            </select><br><br>
+        </fieldset><br>
+
+        <label for="input">자기소개:</label><br>
+        <textarea name="input" placeholder="간단한 자기소개를 적어주세요." cols="100" rows="8"></textarea><br><br>
+
+        <label for="submitdate">제출 날짜: </label>
+        <input type="date" name="submitdate"><br><br>
+        <input type="submit" value="Submit" class="submit">
+    </form>
+    
+</body>
+</html>
